@@ -11,7 +11,14 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="meadowmind PICNIC" startnode="12" creator="Twine" creator-version="2.3.9" ifid="8CC95D99-B06A-4D6A-8734-3039B21745FB" zoom="0.6" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">#button-container {
+<tw-storydata name="meadowmind PICNIC" startnode="12" creator="Twine" creator-version="2.3.9" ifid="8CC95D99-B06A-4D6A-8734-3039B21745FB" zoom="0.6" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-icon.undo {
+display: none;
+}
+tw-icon.redo {
+display: none;
+}
+
+#button-container {
     display: flex;
     justify-content: center; /* Center the buttons horizontally */
     margin-bottom: 20px; /* Adjust the margin as needed */
@@ -531,7 +538,6 @@ function displayPicnic() {
 
 &lt;/body&gt;
 &lt;/html&gt;
-
 [[to my lessons-&gt;hub]]</tw-passagedata><tw-passagedata pid="4" name="day 2" tags="meadow2" position="729,674" size="100,100">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -1608,19 +1614,12 @@ By undertaking this journey, you have begun your commitment to waking up into a 
 [[to my garden-&gt;meadow]]
 &lt;/p&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;scroll-button scroll-button-right&quot; onclick=&quot;togglePages()&quot;&gt;⇧&lt;/div&gt;
+        &lt;!-- Removed scroll-button --&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;script&gt;
-    function togglePages() {
-        document.getElementById(&quot;page1&quot;).style.display = document.getElementById(&quot;page1&quot;).style.display === &quot;none&quot; ? &quot;flex&quot; : &quot;none&quot;;
-        document.getElementById(&quot;page2&quot;).style.display = document.getElementById(&quot;page2&quot;).style.display === &quot;none&quot; ? &quot;flex&quot; : &quot;none&quot;;
-    }
-&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-
 </tw-passagedata><tw-passagedata pid="12" name="load" tags="enter" position="1086.6666666666665,163.33333333333334" size="100,100">&lt;script&gt;
 // Preloaded array of flower images
 const flowers = [
